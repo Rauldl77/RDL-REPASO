@@ -60,7 +60,7 @@ jobs:
             sleep 60
             docker stop web && docker rm web
             docker rmi rdl77/casa
-            docker run -d -p 80:5000 --name web rdl77/casa
+            docker run -d -p 80:8000 --name web rdl77/casa
 
   # health_check_job:
   #   runs-on: ubuntu-latest
